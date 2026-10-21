@@ -1,7 +1,9 @@
 :root { color: #1d1d1f; background: #f7f7f4; font-family: Arial, "Apple SD Gothic Neo", sans-serif; }
 * { box-sizing: border-box; }
 body { min-height: 100vh; margin: 0; }
-.logo { position: fixed; top: 32px; left: 40px; width: 153px; height: auto; }
+.back { position: fixed; top: 32px; left: 40px; color: #555; font-size: .9rem; text-decoration: none; }
+.back:hover { color: #111; }
+.logo { position: fixed; top: 32px; right: 40px; width: 153px; height: auto; }
 main { min-height: 100vh; display: grid; place-items: center; padding: 96px 24px 48px; }
 .maker { width: min(100%, 560px); text-align: center; }
 h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -.06em; }
@@ -21,4 +23,4 @@ body.generated #qr-wrap { display: grid; order: 1; place-items: center; }
 #qr { display: grid; place-items: center; width: 272px; height: 272px; padding: 16px; border-radius: 20px; background: #fff; box-shadow: 0 18px 50px #2c2c2614; cursor: pointer; }
 #qr canvas, #qr img { width: 240px; height: 240px; }
 .download-note { margin-top: 16px; font-size: .9rem; }
-@media (max-width: 560px) { .logo { top: 24px; left: 24px; width: 122px; } form { display: grid; } button { min-height: 54px; } }
+@media (max-width: 560px) { .back { top: 24px; left: 24px; } .logo { top: 24px; right: 24px; width: 122px; } form { display: grid; } button { min-height: 54px; } }
